@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" http-equiv="content-type" type="text/javascript" name="viewPort" content="width=device-width, height=device-height, initial-scale=1">
+        <script type="text/javascript" src="/common/script/appPublic.js"></script>
+        <script>
+            appPublic.loadCssFile([
+                "/login/style/default.css"
+            ]);
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-box" id="login_form_page">
+                <!-- 注册 -->
+                <div class="register-box hidden" >
+                    <h1 data-lang="STR_LOGIN_REGISTER"><h1>
+                    <input type="text" class="form-control" data-lang="STR_LOGIN_USRNAME">
+                    <input type="email" class="form-control" data-lang="STR_LOGIN_EMAIL">
+                    <input type="password" class="form-control" data-lang="STR_LOGIN_PWD">
+                    <input type="password" class="form-control" data-lang="STR_LOGIN_CONFIRMPWD">
+                    <button data-lang="STR_LOGIN_REGISTER"></button>
+                </div>
+                <!-- 登陆 -->
+                <div class="login-box">
+                    <h1 data-lang="STR_LOGIN_LOGIN"><h1>
+                    <input type="text" class="form-control" data-lang="STR_LOGIN_USRNAME">
+                    <input type="password" class="form-control" data-lang="STR_LOGIN_PWD">
+                    <button data-lang="STR_LOGIN_LOGIN"></button>
+                </div>
+            </div>
+            <div class="con-box left">
+                <h2 data-lang="STR_LOGIN_INFO"></h2>
+                <p data-lang="STR_LOGIN_LOGIN_NOTE"></p>
+                <p data-lang="STR_LOGIN_LOGIN_PINFO" ></p>
+                <button data-lang="STR_LOGIN_LOGIN_BTNINFO"></button>
+            </div>
+            <div class="con-box right">
+                <h2 data-lang="STR_LOGIN_INFO"></h2>
+                <p data-lang="STR_LOGIN_REGISTER_NOTE"></p>
+                <p data-lang="STR_LOGIN_REGISTER_PINFO"></p>
+                <button data-lang="STR_LOGIN_REGISTER_BTNINFO"></button>
+            </div>
+        </div>
+
+        <script>
+            appPublic.loadJsFile([
+                "resources",
+                "/language/script/languageCh.js",
+                "/common/script/appCommon.js",
+                "/login/script/default.js",
+            ], function(){
+                login.init();
+            });
+        </script>
+    </body>
+</html>
