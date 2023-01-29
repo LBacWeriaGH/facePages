@@ -2,14 +2,11 @@
     var appCommon = {
         lang(_callback){
             setLangToPage = function(){
-                console.log($("[data-lang]"))
                 $("[data-lang]").each(function (index,el) {
-                    console.log(window.lang)
                     var langAttr = window.lang[$(el).attr('data-lang')];
                     if(! langAttr){
                         langAttr = " "
                     }
-                    console.log(el.tagName.toLowerCase())
                     switch (el.tagName.toLowerCase()) {
                         case "input":
                             $(el).prop("placeholder", langAttr);

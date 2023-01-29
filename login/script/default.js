@@ -6,8 +6,8 @@
                 //待开发
             });
             //添加图片
-            $(".con-box.left p:first-of-type").after(appPublic.createUrlElement("img", "/pages/login/loginLeft.png"));
-            $(".con-box.right p:first-of-type").after(appPublic.createUrlElement("img", "/pages/login/loginRight.png"));
+            $(".con-box.left p:first-of-type").after(appPublic.createUrlElement("img", "pages/login/loginLeft.png"));
+            $(".con-box.right p:first-of-type").after(appPublic.createUrlElement("img", "pages/login/loginRight.png"));
             
             //按钮触发
             $loginButton = $(".con-box.left button:first-of-type")[0];

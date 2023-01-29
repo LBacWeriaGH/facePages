@@ -187,7 +187,7 @@
             }
 
             if ("resources" == _fileList[0]) {
-                that.loadUrlElement("script", "/resources/jquery-1.12.4.min.js");
+                that.loadUrlElement("script", "resources/jquery-1.12.4.min.js");
                 callLoadAppJsFile();
             }else{
                 callLoadAppJsFile();
